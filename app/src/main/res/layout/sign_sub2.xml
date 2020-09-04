@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:fitsSystemWindows="true"
+    android:background="#e9e9e9"
+    tools:context=".SignSub2">
+    <include layout="@layout/toolbar_sub"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <LinearLayout
+            android:layout_marginTop="30dp"
+            android:layout_width="330dp"
+            android:layout_height="330dp"
+            android:orientation="vertical"
+            android:background="@drawable/sign_background"
+            android:layout_gravity="center">
+
+            <ImageView
+                android:layout_width="116dp"
+                android:layout_height="45dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="45dp"
+                android:src="@drawable/bi" />
+            <TextView
+                android:layout_gravity="center"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="AR 증강현실 당구 컨텐츠"
+                android:textStyle="normal"
+                android:textColor="#4068e2"
+                android:textSize="12sp"/>
+            <TextView
+                android:layout_gravity="center"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="빌리내비"
+                android:textStyle="bold"
+                android:textColor="#4068e2"
+                android:textSize="12sp"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="32dp"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:textColor="#222222"
+                android:layout_gravity="center"
+                android:text="빌리내비에 오신것을 환영합니다!"/>
+            <TextView
+                android:layout_gravity="center"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="14dp"
+                android:textColor="#444444"
+                android:textSize="11sp"
+                android:text="추가정보를 입력하시면 빌리내비의 개인별 경기기록 및"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:textColor="#444444"
+                android:textSize="11sp"
+                android:text="다양한 정보를 이용하실 수 있습니다."/>
+
+            <Button
+                android:layout_width="290dp"
+                android:layout_height="50dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="30dp"
+                android:background="@drawable/setting_btn1"
+                android:text="추가 정보 입력하기"
+                android:id="@+id/btn_information"
+                android:textColor="#444444"
+                android:textSize="15sp" />
+        </LinearLayout>
+        <Button
+            android:layout_gravity="center"
+            android:layout_marginTop="60dp"
+            android:background="@drawable/setting_btn2"
+            android:textColor="#ffffff"
+            android:textSize="15sp"
+            android:id="@+id/btn_home"
+            android:onClick="onClickSign"
+            android:layout_width="330dp"
+            android:layout_height="60dp"
+            android:text="HOME"
+            android:layout_marginBottom="30dp"/>
+    </LinearLayout>
+</LinearLayout>

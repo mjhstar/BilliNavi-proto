@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <array name="colorArray">
+        <item>@color/firColor</item>
+        <item>@color/secColor</item>
+        <item>@color/thrColor</item>
+        <item>@color/fourColor</item>
+        <item>@color/fivColor</item>
+        <item>@color/sixColor</item>
+        <item>@color/sevColor</item>
+    </array>
+</resources>

@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginLeft="15dp"
+    android:layout_marginTop="50dp"
+    android:layout_marginRight="15dp"
+    android:layout_marginBottom="50dp"
+    android:background="@drawable/dialog"
+    android:gravity="center"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:paddingTop="25dp"
+        android:text="빌리내비에 오신것을"
+        android:textColor="#222222"
+        android:textSize="22sp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="환영합니다."
+        android:textColor="#222222"
+        android:textSize="25sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:gravity="center"
+        android:text="빌리내비는 더 나은 서비스 제공을 위해"
+        android:textColor="#444444"
+        android:textSize="14sp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="아래와 같은 기능이 필요합니다."
+        android:textColor="#444444"
+        android:textSize="14sp" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/popover_img"
+        android:gravity="bottom"
+        android:orientation="vertical">
+
+        <TableLayout
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center">
+
+            <TableRow
+                android:gravity="center_vertical"
+                android:background="@android:color/white"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    android:src="@drawable/pop_icon_1" />
+
+                <TextView
+                    android:text="주위 가까운 매장을 착지 위해\n위치정보를 사용합니다"
+                    android:textColor="#444444"
+                    android:textSize="14sp" />
+            </TableRow>
+
+            <TableRow
+                android:gravity="center_vertical"
+                android:layout_marginTop="3dp"
+                android:background="@android:color/white"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    android:src="@drawable/pop_icon_2" />
+
+                <TextView
+                    android:text="QR코드 로그인 서비스를 위해\n카메라를 사용합니다."
+                    android:textColor="#444444"
+                    android:textSize="14sp" />
+            </TableRow>
+
+            <TableRow
+                android:layout_marginTop="3dp"
+                android:gravity="center_vertical"
+                android:background="@android:color/white"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    android:src="@drawable/pop_icon_3" />
+
+                <TextView
+                    android:text="개인정보 설정을위해 사진을 사용합니다"
+                    android:textColor="#444444"
+                    android:textSize="14sp" />
+            </TableRow>
+        </TableLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/close_dialog"
+                android:layout_width="wrap_content"
+                android:layout_height="60dp"
+                android:layout_weight="1"
+                android:background="@drawable/introbutton_left"
+                android:onClick="onClickDialog"
+                android:text="창닫기"
+                android:textSize="18sp" />
+
+            <TextView
+                android:layout_width="1dp"
+                android:layout_height="60dp"
+                android:background="#F0F0F0"
+                android:gravity="center" />
+
+            <Button
+                android:id="@+id/setting_dialog"
+                android:layout_width="wrap_content"
+                android:layout_height="60dp"
+                android:layout_weight="1"
+                android:background="@drawable/introbutton_right"
+                android:onClick="onClickDialog"
+                android:text="설정하기"
+                android:textSize="18sp" />
+        </LinearLayout>
+    </LinearLayout>
+
+
+</LinearLayout>

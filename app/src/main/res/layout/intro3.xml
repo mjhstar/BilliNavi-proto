@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".Intro3">
+
+    <!-- TODO: Update blank fragment layout -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="46dp"
+        android:text="유익한 정보와 커뮤니티"
+        android:layout_gravity="center_horizontal"
+        android:textSize="24sp"
+        android:textColor="#222222"/>
+    <TextView
+        android:paddingTop="23dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="나만의 큐 자랑 영상 및 자유로운 커뮤니티 활동!"
+        android:layout_gravity="center_horizontal"
+        android:textSize="15sp"
+        android:textColor="#777777"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="다양한 이벤트와 당구대회 정보를 확인하세요."
+        android:layout_gravity="center_horizontal"
+        android:textSize="15sp"
+        android:textColor="#777777"
+        />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/intro_swipe_3" />
+
+</LinearLayout>

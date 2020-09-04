@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorBackground"
+    android:gravity="center_horizontal"
+    android:orientation="vertical"
+    tools:context=".StoreSub1">
+
+    <EditText
+        android:id="@+id/store_sub2_search_edit"
+        android:layout_width="330dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginBottom="20dp"
+        android:background="@drawable/edit_search"
+        android:drawableRight="@drawable/search"
+        android:hint="검색"
+        android:paddingLeft="20dp"
+        android:paddingRight="10dp" />
+
+    <LinearLayout
+        android:layout_width="330dp"
+        android:layout_height="wrap_content"
+        android:gravity="left"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="총 "
+            android:textColor="@color/regular14"
+            android:textSize="11sp" />
+
+        <TextView
+            android:id="@+id/store_count_sub2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="123"
+            android:textColor="@color/regular14"
+            android:textSize="11sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="건"
+            android:textColor="@color/regular14"
+            android:textSize="11sp" />
+    </LinearLayout>
+
+<!--
+    <androidx.swiperefreshlayout.widget.SwipeRefreshLayout
+        android:id="@+id/swipe_storeSub2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+-->
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/store_sub2_recy"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+<!--    </androidx.swiperefreshlayout.widget.SwipeRefreshLayout>-->
+</LinearLayout>

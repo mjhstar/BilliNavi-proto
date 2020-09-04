@@ -1,0 +1,33 @@
+<resources>
+
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="colorPrimary">@color/colorNormal</item>
+        <item name="colorPrimaryDark">@color/zxing_transparent</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="windowNoTitle">true</item>
+        <item name="windowActionBar">false</item>
+        <!--item name="android:colorControlNormal">#ffffff</item-->
+        <!--상태바 투명-->
+        <item name="android:windowDrawsSystemBarBackgrounds">true</item>
+        <item name="android:statusBarColor">@color/zxing_transparent</item>
+        <item name="android:windowTranslucentStatus">true</item>
+    </style>
+
+    <style name="AppTheme.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+        <item name="android:statusBarColor">@android:color/transparent</item>
+    </style>
+
+    <style name="SplashTheme" parent="@android:style/Theme.Light.NoTitleBar">
+        <item name="android:windowBackground">@drawable/intro</item>
+    </style>
+
+    <style name="TabTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <item name="colorPrimary">#FFFFFF</item>                                <!-- 배경 -->
+        <item name="android:textColorPrimary">@color/colorMain</item>       <!-- 탭바 선택된 텍스트 -->
+        <item name="android:textColorSecondary">@color/colorNormal</item>     <!-- 탭바 텍스트 -->
+        <item name="colorAccent">@color/colorMain</item>                    <!-- 하단 움직이는 바 색-->
+    </style>
+
+</resources>

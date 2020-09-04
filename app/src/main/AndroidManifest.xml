@@ -1,0 +1,216 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.billinavi">
+    <!--
+         The ACCESS_COARSE/FINE_LOCATION permissions are not required to use
+         Google Maps Android API v2, but you must specify either coarse or fine
+         location permissions for the 'MyLocation' functionality.
+    -->
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.CHANGE_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCEPT_HANDOVER " />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.FLASHLIGHT" />
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"/>
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE"/>
+
+
+    <uses-feature
+        android:name="android.hardware.camera2"
+        android:required="true" />
+
+    <application
+        android:allowBackup="true"
+        android:hardwareAccelerated="true"
+        android:icon="@mipmap/ic_main"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        android:usesCleartextTraffic="true">
+        <activity android:name=".RankingWin">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".RankingWin" />
+        </activity>
+        <activity android:name=".RankingHigh">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".RankingHigh" />
+        </activity>
+        <activity android:name=".RankingAve">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".RankingAve" />
+        </activity>
+        <activity android:name=".GPS">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".GPS" />
+        </activity>
+        <activity android:name=".MyRoom3">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".MyRoom3" />
+        </activity>
+        <activity android:name=".SettingSub2_Sign">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".SettingSub2_Sign" />
+        </activity>
+        <activity android:name=".LoungeVideo">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".LoungeVideo" />
+        </activity>
+        <activity android:name=".LoungeSub4Read">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".LoungeSub4Read" />
+        </activity>
+        <activity android:name=".LoungeSub4Write">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".LoungeSub4Write" />
+        </activity>
+
+        <provider
+            android:name="androidx.core.content.FileProvider"
+            android:authorities="com.example.billinavi"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/file_path" />
+        </provider>
+
+        <activity android:name=".StoreSub4">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".StoreSub4" />
+        </activity>
+        <activity android:name=".SettingSub5">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".Setting" />
+        </activity>
+        <activity android:name=".SettingSub4">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".Setting" />
+        </activity>
+        <activity android:name=".SettingSub3">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".Setting" />
+        </activity>
+        <activity android:name=".SignSub6">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".SignSub5" />
+        </activity>
+        <activity android:name=".SignSub5">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".Setting" />
+        </activity>
+        <activity android:name=".SignSub2">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".SignSub2" />
+        </activity>
+        <activity android:name=".SignSub1">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".SignSub1" />
+        </activity>
+        <activity android:name=".SignSub4">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".SettingSub2" />
+        </activity>
+        <!--
+             The API key for Google Maps-based APIs is defined as a string resource.
+             (See the file "res/values/google_maps_api.xml").
+             Note that the API key is linked to the encryption key used to sign the APK.
+             You need a different API key for each encryption key, including the release key that is used to
+             sign the APK for publishing.
+             You can define the keys for the debug and release targets in src/debug/ and src/release/.
+        -->
+        <activity android:name=".QRCode">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".QRCode" />
+        </activity>
+        <activity android:name=".MyRoom2">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".MyRoom2" />
+        </activity>
+        <activity android:name=".SignSub9">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".SignSub8" />
+        </activity>
+        <activity android:name=".SignSub8">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".SignSub7" />
+        </activity>
+        <activity android:name=".SignSub7">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".Setting" />
+        </activity>
+        <activity android:name=".SettingSub6">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".Setting" />
+        </activity>
+        <activity android:name=".SettingSub6_2">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".SettingSub6" />
+        </activity>
+        <activity android:name=".SettingSub6_1">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".SettingSub6" />
+        </activity>
+        <activity android:name=".SettingSub2">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".Setting" />
+        </activity>
+        <activity
+            android:name=".Splash"
+            android:screenOrientation="portrait"
+            android:theme="@style/SplashTheme">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".Setting">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".MyRoom2" />
+        </activity>
+        <activity android:name=".Intro" />
+        <activity
+            android:name=".MainActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
+
+        <meta-data
+            android:name="com.kakao.sdk.AppKey"
+            android:value="07ab8c2a4e6b4acc837e187cde16ed83" />
+    </application>
+
+</manifest>

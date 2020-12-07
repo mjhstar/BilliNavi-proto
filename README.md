@@ -1,9 +1,9 @@
-# billinavi PROTOTYPE
+# App PROTOTYPE
 ### 
 
 ### :large_orange_diamond: 프로젝트 설명
 ----------------------------------------------------------
 
-:point_right: 빌리내비 커뮤니티 앱 프로토타입 
+:point_right: 게임 커뮤니티 앱 프로토타입 
 
  * 저작권 관련 이미지들은 전부 삭제했습니다.
